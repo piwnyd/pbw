@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="img/logo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <style>
+        body {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #hero {
+            background-Color:#BC7FCD;
+            color : "black";           
+            margin-top: 40px;
+            border-radius: 15px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        #artikel {
+            border-radius: 15px;
+            margin-top: 50px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        #gallery {
+            background-Color:#BC7FCD;
+            color : "black"; 
+            border-radius: 15px;
+            margin-top: 50px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+
+        .toggle-btn {
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        #navbar{
+            background-color: #BC7FCD;
+        }
+    </style>
+</head>
+
+
+<body class="light-mode">
+    <!--navbar-->
+    <nav id="navbar" class="navbar navbar-expand-lg  sticky-top  shadow-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#Hero">
+                <img src="logo.png" alt="WebCat" width="100" height="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-dark">
+                    <li class="nav-item">
+                        <a id="homeLink"  class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  id="articleLink" class="nav-link" href="#article">Article</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="galleryLink" class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                </ul>
+                <button id="darkModeBtn" onclick="toggleDarkMode()">
+                    <i id="matahari" class=" bi-moon-stars-fill "></i>
+                </button>
+                <button id="lightModeBtn" onclick="toggleLightMode()">
+                    <i id="bulan" class=" bi-brightness-high"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!--navbar-->
+
+    <!--Hero-->
+    <section id="hero" class="text-center p-5  text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex flex-sm-row-reverse align-items-center">
+                <img src="https://awsimages.detik.net.id/community/media/visual/2024/05/29/drakor-terbaru-tayang-bulan-juni-2024-2.jpeg?w=690"
+                    class="img-fluid" width="300">
+                <div>
+                    <h1 class="fw-bold display-4"> Pesona Drama Korea Mengungah Emosi Dan Budaya</h1>
+                    <h4 class="lead display-6"> Sejarah drama Korea Selatan (Korsel), atau populer disebut drakor,
+                        selalu menarik untuk dipelajari, terutama untuk memahami cara suatu budaya menyebar ke negara
+                        lain.
+                    </h4>
+                    <h6>
+                        <span id="tanggal"></span>
+                        <span id="jam"></span>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Hero-->
+
+    <!--Artikel-->
+    <section id="article" class="text-center p-5">
+        <div class="container">
+            <h1 class="fw-bold display-4 pb-3">Article</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://images.tokopedia.net/img/KRMmCm/2023/2/1/30b738f5-f65e-4d1d-a7ee-ce7ca20ab8c7.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 id="card1" class="card-title">Card title</h5>
+                            <p x class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://awsimages.detik.net.id/community/media/visual/2023/03/11/the-glory-season-2_169.jpeg?w=600&q=90"
+                            class="card-img-top" alt="...">
+                        <div id="card2" class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtr46mQfbW04ajMPpLIXX0lORZQeCCuYoRug&s"
+                            class="card-img-top" alt="...">
+                        <div id="card3" class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://www.viu.com/ott/id/articles/wp-content/uploads/2020/08/drama-korea-Scarlet-Heart-sub-indo-viu-600x338.jpg"
+                            class="card-img-top" alt="...">
+                        <div id="card4" class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://pict.sindonews.net/webp/480/pena/news/2023/07/17/700/1153765/20-drama-korea-terbaik-rating-tertinggi-sepanjang-masa-terkecil-di-atas-30-azk.webp"
+                            class="card-img-top" alt="...">
+                        <div id="card5" class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Artikel-->
+    <!--Gallery-->
+    <section id="gallery" class="p-3 mb-2 text-center p-5">
+        <div class="container">
+            <h1 class="fw-bold display-4 pb-3"> Gallery Drakor</h1>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://cdn1-production-images-kly.akamaized.net/GrUkt7L3ZdIVhTt6Zuiha6f6g7Y=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/4800413/original/088083000_1712925706-Lovly_Runner.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://about.vidio.com/wp-content/uploads/2020/12/Landscape-Tanpa-HD-1.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://tabloidnyata.com/wp-content/uploads/2024/08/Screenshot_20240816_205550_Chrome.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets-a1.kompasiana.com/items/album/2019/02/06/images-30-5c5a3c16ab12ae188e0abcb4.jpeg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://image.popmama.com/content-images/post/20230328/landscape-popmama-800-x-420-5jpg-58b910c78eb41a4d2898ef6420d4b3dd.jpg?width=600&height=auto"
+                            class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--Gallery-->
+
+    <!-- footer --->
+    <footer class="text-center p-5">
+        <div>
+            <a href="https://www.instagram.com/amandadevyanaa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i id="icon1"
+                class="bi bi-instagram h2 p-2"></i></a>
+            <a href="mb8qs2OoBPRm1u-Hy_vbQA"><i id="icon2" class="bi bi-youtube h2 p-2"></i></a>
+            <a href="https://wa.me/+6285848914281"><i id="icon3" class="bi bi-whatsapp h2 p-2 "></i></a>
+        </div>
+        <div>
+            Amanda Devyana &copy; 2024
+        </div>
+    </footer>
+    <!-- footer --->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+    
+        function toggleDarkMode() {
+            document.body.style.backgroundColor = "black"; // Dark background
+            document.body.style.color = "white"; // Light text
+            document.getElementById('hero').style.backgroundColor = "#8174A0"; // Dark hero background
+            document.getElementById('gallery').style.backgroundColor = "#8174A0"; // Dark hero background
+            document.getElementById("navbar").classList.remove = "bg-danger-subtle";
+            document.getElementById('navbar').style.backgroundColor = "#8174A0";
+            
+            // navbar link
+            document.getElementById('homeLink').style.color = "white";
+            document.getElementById('articleLink').style.color = "white";
+            document.getElementById('galleryLink').style.color = "white";
+          
+
+
+            // button 
+            document.getElementById('darkModeBtn').style.backgroundColor = "black";
+            document.getElementById('matahari').style.color = "white"; // White icon for dark mode
+
+            document.getElementById('icon1').style.color = "white"; // White icon for light mode
+            document.getElementById('icon2').style.color = "white"; // White icon for light mode
+            document.getElementById('icon3').style.color = "white"; // White icon for light mode
+            document.getElementById("footercard1").style.Color = "white"
+
+
+        }
+
+        function toggleLightMode() {
+            
+            document.body.style.backgroundColor = "#ffffff"; // Light background
+            document.body.style.color = "black"; // Dark text
+            document.getElementById('hero').style.backgroundColor = "#FFB0B0"; // Light hero background
+            document.getElementById('gallery').style.backgroundColor = "#FFB0B0"; // Light hero background
+            document.getElementById('navbar').style.backgroundColor = "#FFB0B0";
+
+            // navbar link
+            document.getElementById('homeLink').style.color = "black";
+            document.getElementById('articleLink').style.color = "black";
+            document.getElementById('galleryLink').style.color = "black";
+
+            //button 
+            document.getElementById('lightModeBtn').style.backgroundColor = "red";
+            document.getElementById('bulan').style.color = "white"; // White icon for light mode
+
+            document.getElementById('icon1').style.color = "black"; // White icon for light mode
+            document.getElementById('icon2').style.color = "black"; // White icon for light mode
+            document.getElementById('icon3').style.color = "black"; // White icon for light mode
+
+        }
+    </script>
+</body>
+
+</html>

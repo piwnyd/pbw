@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Belajar Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    #hero {
+      margin-top: 40px;
+      border-radius: 15px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    #artikel {
+      background-color: #e3f2fd;
+      border-radius: 15px;
+      margin-top: 50px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    #gallery {
+      border-radius: 15px;
+      margin-top: 50px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--nav-->
+  <nav class="navbar navbar-expand-lg shadow-lg" style="background-color: #e3f2fd;">
+    <div class="container">
+      <a class="navbar-brand" href="#Hero">
+        <img src="logo.png" alt="WebCat" width="150" height="150">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#artikel">Artikel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#hero">Hero</a></li>
+              <li><a class="dropdown-item" href="#artikel">Artikel Narnia</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#gallery">Gallery Narnia</a></li>
+            </ul>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--nav-->
+
+  <!--Hero-->
+  <section id="hero" class="p-3 mb-2 bg-danger-subtle text-center p-5">
+    <div class="container">
+      <h1 class="fw-bold display-4 pb-3"> WebCat</h1>
+      <p>Kami sangat senang Anda mengunjungi platform kami. Di WebCat, Anda akan menemukan berbagai artikel yang
+        menginspirasi, mendidik, dan menghibur. Kami berkomitmen untuk memberikan konten berkualitas yang dapat
+        memperkaya pengetahuan dan wawasan Anda.
+        Di WebCat, Anda bisa membaca artikel mendalam yang menggali topik-topik penting secara detail, mulai dari
+        teknologi, kesehatan, hingga gaya hidup. Selain itu, Anda juga bisa menemukan berita terbaru yang dikurasi
+        khusus untuk Anda. Jangan lewatkan tips
+        dan trik praktis yang dapat meningkatkan kualitas hidup Anda, dari produktivitas hingga kesehatan mental.Kami
+        menyediakan platform yang mendukung kreativitas dan ekspresi diri. Dengan konten berkualitas yang ditulis oleh
+        penulis berpengalaman, desain situs
+        yang mudah dinavigasi, dan fitur interaktif yang memungkinkan Anda berkomentar dan berbagi artikel favorit, kami
+        yakin Anda akan menikmati waktu Anda di sini. Mari eksplorasi dan nikmati konten yang tersedia. Sekali lagi,
+        selamat datang di WebArtikel. Semoga Anda menemukan artikel yang bermanfaat dan menginspirasi!</p>
+    </div>
+  </section>
+  <!-- Hero-->
+
+  <!--Artikel-->
+  <section id="artikel" class="p-3 mb-2  text-center p-5" margin="bottom">
+    <div class="container">
+      <h1 class="fw-bold display-4 pb-3"> NARNIA</h1>
+      <img src="https://memorandum.disway.id/upload/f1e98c846fdefd70c86334f609151248.jpeg" class="card-img-top"
+        alt="gambar narnia" style="width: 500px;"><br><br>
+      <p>Narnia adalah suatu dunia fiksi yang diciptakan oleh pengarang Anglo-Irlandia C.S. Lewis sebagai lokasi untuk
+        The Chronicles of Narnia, yang dibukukan sebanyak tujuh novel fantasi anak-anak, yaitu The Lion, The Witch, and
+        The wardrobe; The Magician's Nephew; The Horse and His Boy; Prince Caspian; Silver Chair; The Voyage of The Dawn
+        Treader; The Last Battle.
+        Di Narnia terdapat berbagai macam makhluk yang sering di imajinasikan oleh anak - anak dan tidak terdapat dalam
+        dunia nyata seperti: binatang yang bisa berbicara, manusia dengan setengah badan hewan, manusia kerdil, dan
+        sebagainya. Cerita Narnia di mulai dari pembentukan hingga hari akhir dunia tersebut,
+        terutama mengarah kepada seseorang (manusia) yang masuk ke dalam dunia Narnia, yang biasanya masih
+        kanak-kanak.Adalah empat bersaudara Pevensie yang memulai petualangan tersebut. Peter, Susan, Edmund, dan Lucy.
+        Saudara sepupu mereka, Eustace Scrubb, turut meramaikan suasana novel Narnia bersama teman sekolahnya, Jill
+        Pole, dalam petulangan ke Tanah Liar di Utara.</p>
+    </div>
+  </section>
+  <!--Artikel-->
+
+  <!--Gallery-->
+  <section id="gallery" class="p-3 mb-2 bg-danger-subtle text-center p-5">
+    <div class="container">
+      <h1 class="fw-bold display-4 pb-3">Gallery Film Narnia</h1>
+      <div class="card-group">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC6plXYj1RgeLVU4k7P-xYjDoPp3eDvl3mKA&s"
+            class="card-img-top" alt="Narnia 1">
+          <div class="card-body">
+            <h5 class="card-title">The Chronicles of Narnia: The Lion, the Witch and the Wardrobe (2005)</h5>
+            <p class="card-text">Film pertama dari rangkaian kisah Narnia ini mengisahkan awal mula dimulainya
+              petualangan di negeri Narnia.
+              Mulanya, empat orang kakak beradik harus mengungsi dari rumah mereka ke rumah Profesor Digory Kirke karena
+              dampak Perang Dunia II.
+              Mereka adalah Peter (William Moseley), Susan (Anna Popplewell), Edmund (Skandar Keynes), dan Lucy (Georgie
+              Henley).
+              Suatu hari, mereka bermain petak umpat dan Lucy ingin bersembunyi di dalam sebuah lemari. Ketika membuka
+              pintu lemari tersebut, Lucy justru masuk ke Narnia.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://asset-2.tstatic.net/style/foto/bank/images/the-chronicles-of-narnia-prince-caspian_20170403_175003.jpg"
+            class="card-img-top" alt="Narnia 2">
+          <div class="card-body">
+            <h5 class="card-title">The Chronicles of Narnia: Prince Caspian (2008)</h5>
+            <p class="card-text">Pada film kedua ini, Peter, Susan, Edmund, dan Lucy beranjak dewasa. Suatu ketika,
+              mereka berangkat sekolah menggunakan kereta, tapi tiba-tiba terowongan kereta lenyap dan berubah menjadi
+              gerbang menuju Narnia.
+              Rupanya, mereka terpanggil masuk ke Narnia karena terpanggil oleh Pangeran Caspian (Ben Barnes) yang
+              meniup terompet Susan. Pangeran Caspian meminta bantuan Raja dan Ratu Narnia untuk melawan Lord Miraz,
+              pengkhianat yang membunuh Raja Telmarine.
+              Pangeran Caspian adalah anak dari Raja Telmarine yang seharusnya mewariskan tahta, tetapi direbut oleh
+              Lord Miraz.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://asset-2.tstatic.net/style/foto/bank/images/film-the-chronicles-of-narnia-the-voyage-of-dawn-treader_20160928_200532.jpg"
+            class="card-img-top" alt="Narnia 3">
+          <div class="card-body">
+            <h5 class="card-title">The Chronicles of Narnia: The Voyage of the Dawn Treader (2010)</h5>
+            <p class="card-text">Kisah petualangan di negeri Narnia berlanjut ketika Edmund dan Lucy sudah dewasa. Peter
+              dan Susan sudah hidup terpisah dari mereka.
+              Sementara Edmund dan Lucy tinggal di rumah sepupu mereka, Eustace (Will Poulter) yang menjengkelkan karena
+              suka mengolok-olok mereka tentang Narnia.
+              Suatu ketika, sebuah lukisan di rumah Eustace yang mirip dengan pemandangan Narnia mengeluarkan air hingga
+              membuat Edmund, Lucy, dan Eustace tenggelam.
+              Ketika mereka berusaha mencapai permukaan air tersebut, mereka justru muncul di lautan Narnia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Gallery-->
+
+  <footer class="text-center p-5">
+    <p>@ 2024 WebCat</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

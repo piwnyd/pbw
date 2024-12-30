@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabel Mahasiswa HTML</title>
+</head>
+<body bgcolor="pink" >
+    <hr style="height: 3px; background-color: black;">
+    <h1 text align="center">Tabel Mahasiswa</h1>
+    <hr style="height: 3px; background-color: black;">
+    <form>
+        <table border="1" cellspacing="0" cellpadding="10" width="100%" style="background-color: rgb(240, 232, 183)">
+            <tr valign="top">
+                <th text align="left" >NIM</th>
+                <td>:</td>
+                <td ><input type="text" placeholder="NIM" name="NIM" style="background-color: rgb(183, 240, 240)"></td>
+            </tr>
+            <tr valign="top">
+                <th text align="left">Nama</th>
+                <td>:</td>
+                <td><input type="text" placeholder="Nama" name="Nama" style="background-color: rgb(183, 240, 240)"></td>
+            </tr>
+            <tr valign="top">
+                <th text align="left">Alamat</th>
+                <td>:</td>
+                <td><textarea name="Alamat" cols="20" rows="3" placeholder=" Alamat" style="background-color: rgb(183, 240, 240)"></textarea></td>
+            </tr>
+            <tr valign="top">
+                <th text align="left">Program Studi</th>
+                <td>:</td>
+                <td><select name="progdi" style="background-color: rgb(183, 240, 240)" >
+                    <option selected="select" >-= Pilih Jurusan =-</option>
+                    <option value="TI">S1-Teknik Informatika</option>
+                    <option value="SI">S1-Sistem Informasi</option>
+                    <option value="DKV">S1-Desain Komunikasi Visual</option>
+                    <option value="ILKOM">S1-Ilmu Komunikasi</option></td>
+            </tr>
+            <tr valign="top">
+                <th text align="left">Jenis Kelamin</th>
+                <td>:</td>
+                <td>Laki-laki <input type="radio" name="jenis_kelamin" value="L">
+                    Perempuan <input type="radio" name="jenis_kelamin" value="P">
+            </tr>
+            <tr valign="top">
+                <th text align="left">No.HP</th>
+                <td>:</td>
+                <td><textarea name="No.HP" cols="20" rows="3" placeholder=" No.HP" style="background-color: rgb(183, 240, 240)"></textarea></td>
+            </tr>
+            <tr valign="top">
+                <th rowspan="2" text align="left">Dosen</th>
+                <td rowspan="2">:</td>
+                <th text align="left">Dosen Wali : <input type="text" placeholder="Nama Dosen Wali" name="Dosen Wali" style="background-color: rgb(183, 240, 240)"></th>
+            </tr>
+            <tr valign="top">
+                <th text align="left">Dosen Pembimbing : <input type="text" placeholder="Nama Dosen Pembimbing" name="Dosen Pembimbing" style="background-color: rgb(183, 240, 240)"></th>
+            </tr>
+            <tr>
+                <td colspan="8" text align="center">
+                <button type="submit" name="" style="background-color: rgb(183, 240, 240)">Simpan</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

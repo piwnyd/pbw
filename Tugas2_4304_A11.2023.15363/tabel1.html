@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabel Mahasiswa HTML</title>
+</head>
+<body bgcolor="pink">
+    <hr style="height: 3px; background-color: black;">
+    <h1 text align="center">Tabel Mahasiswa</h1>
+    <hr style="height: 3px; background-color: black;">
+  <form>
+    <table border="1" cellspacing="0" cellpadding="10" width="100%" style="background-color: rgb(240, 232, 183)">
+      <tr>
+        <th rowspan="2">NIM</th>
+        <th rowspan="2">Nama</th>
+        <th rowspan="2">Alamat </th>
+        <th rowspan="2">Program Studi</th>
+        <th rowspan="2">Jenis Kelamin</th>
+        <th rowspan="2">No.HP</th>
+        <th colspan="2">Dosen</th>
+      </tr>
+      <tr>
+        <th>Dosen Wali</th>
+        <th>Dosen Pembimbing</th>
+      </tr>
+      <tr>
+        <td valign="top"><input type="text" placeholder="NIM" name="NIM" style="background-color: rgb(183, 240, 240)"></td>
+        <td valign="top"><input type="text" placeholder="Nama" name="Nama" style="background-color: rgb(183, 240, 240)"></td>
+        <td valign="top"><textarea name="Alamat" cols="20" rows="3" placeholder=" Alamat" style="background-color: rgb(183, 240, 240)"></textarea></td>
+        <td valign="top"><select name="progdi" style="background-color: rgb(183, 240, 240)">
+          <option selected="select">-= Pilih Jurusan =-</option>
+          <option value="TI">S1-Teknik Informatika</option>
+          <option value="SI">S1-Sistem Informasi</option>
+          <option value="DKV">S1-Desain Komunikasi Visual</option>
+          <option value="ILKOM">S1-Ilmu Komunikasi</option>
+        </td>
+        <td valign="top" text align="center">
+          Laki-laki <input type="radio" name="jenis_kelamin" value="L"><br>
+          Perempuan <input type="radio" name="jenis_kelamin" value="P"><br>
+        </td>
+        <td valign="top"><textarea name="No.HP" cols="20" rows="3" placeholder=" No.HP" style="background-color: rgb(183, 240, 240)"></textarea></td>
+        <td valign="top"><input type="text" placeholder="Nama Dosen Wali" name="Dosen Wali" style="background-color: rgb(183, 240, 240)"></td>
+        <td valign="top"><input type="text" placeholder="Nama Dosen Pembimbing" name="Dosen Pembimbing" style="background-color: rgb(183, 240, 240)"></td>
+      </tr>
+      <tr>
+        <td colspan="8" text align="center">
+          <button type="submit" name="" style="background-color: rgb(183, 240, 240)">Simpan</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
