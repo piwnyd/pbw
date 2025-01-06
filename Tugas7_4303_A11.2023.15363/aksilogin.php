@@ -1,11 +1,10 @@
 <?php
-include "conection.php"; // Pastikan file ini berisi koneksi dengan $dbh
+include "conection.php"; 
 
 if (isset($_POST['email']) && isset($_POST['password'])) {
     $email = $_POST['email'];
     $pswrd = $_POST['password'];
 
-    // Gunakan prepared statement untuk mencegah SQL Injection
     $stmt = $dbh->prepare("SELECT * FROM users WHERE email = :email AND active = 1");
     $stmt->execute(['email' => $email]);
 
