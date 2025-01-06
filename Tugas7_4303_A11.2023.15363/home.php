@@ -38,7 +38,6 @@ $bukuList = $dbh->fetchAll(PDO::FETCH_ASSOC);
             text-align: center;
         }
         nav ul {
-            list-style: none;
             padding: 0;
             display: flex;
             justify-content: center;
